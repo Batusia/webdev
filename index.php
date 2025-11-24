@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP + Tailwind Example</title>
+    <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <?php
+        $username = "Web Developer";
+        $page_title = "My Tailwind PHP App";
+    ?>
+
+    <header class="bg-indigo-600 p-4 shadow-lg">
+        <h1 class="text-white text-3xl font-bold"><?= $page_title ?></h1>
+    </header>
+
+    <main class="container mx-auto mt-8 p-4">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-xl text-gray-800">Hello, <span class="text-indigo-600 font-semibold"><?= $username ?></span>!</p>
+
+            <?php $is_admin = true; ?>
+            <button class="
+                mt-4 py-2 px-4 rounded transition duration-150 ease-in-out
+                <?php if ($is_admin): ?>
+                    bg-red-500 hover:bg-red-700 text-white
+                <?php else: ?>
+                    bg-green-500 hover:bg-green-700 text-white
+                <?php endif; ?>
+            ">
+                Access Panel
+            </button>
+        </div>
+    </main>
+
+</body>
+</html>
