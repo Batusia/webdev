@@ -3,9 +3,17 @@
             border-radius: 50px;
             float: left;
             margin-right: 10px;
+            padding: 10px;
         }
 
         body {
             background-color: whitesmoke;
+
+        }
+
+        h1{
+            font-weight: bold;
+            color: red;
+            font-weight: bold;
 
         }
