@@ -1,0 +1,11 @@
+        img {
+            width: 200px;
+            border-radius: 50px;
+            float: left;
+            margin-right: 10px;
+        }
+
+        body {
+            background-color: whitesmoke;
+
+        }
